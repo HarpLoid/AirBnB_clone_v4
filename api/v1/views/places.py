@@ -132,6 +132,7 @@ def places_search():
     states = ''
     cities = ''
     amenities = ''
+    print(data)
 
     if data and len(data):
         states = data.get('states', None)
