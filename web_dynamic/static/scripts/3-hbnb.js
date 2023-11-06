@@ -38,7 +38,7 @@ $(document).ready(function () {
   $.ajax({
     type: 'POST',
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
-    dataType: JSON.stringify('{}'),
+    data: '{}',
     contentType: 'application/json',
     success: function (data) {
       for (const i = 0; i < data.length; i++) {
